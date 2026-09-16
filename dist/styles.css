@@ -11,4 +11,7 @@
 @media(max-width:700px){.header-language{position:absolute;top:20px;right:20px}}
 .footer-actions{display:flex;align-items:center;gap:clamp(20px,3vw,45px);flex-wrap:wrap}.footer-x{color:var(--gold);border-bottom:1px solid var(--gold);padding-bottom:5px;font-size:14px}.footer-x span{font-size:12px;margin-left:7px;white-space:nowrap}
 @media(max-width:700px){.footer-actions{width:100%;justify-content:space-between;gap:16px}}
+.game-list{display:grid;gap:28px}.game-card-featured{border-color:rgba(213,181,128,.55);box-shadow:0 28px 75px rgba(0,0,0,.22)}.game-card-secondary{grid-template-columns:1fr 1.5fr}.game-card-secondary .game-details{order:-1}.tag-development{background:var(--gold);color:var(--ink);border-color:var(--gold)}.game-points{margin:-10px 0 30px;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px 18px;color:#d7dfdf;font-size:13px}.game-points li:before{content:"／";color:var(--gold);margin-right:5px}.game-card-featured .game-art img{object-position:center 35%}
+@media(max-width:960px){.game-card-secondary{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.game-card-secondary{display:flex}.game-card-secondary .game-details{order:0}.game-points{display:block}.game-points li+li{margin-top:7px}}
 @media(max-width:390px){.english-hero-title{font-size:34px!important}.clock-real{width:min(100%,calc(240px * var(--zoom)))}}
