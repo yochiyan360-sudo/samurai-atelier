@@ -4,8 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10171c">
-  <meta name="description" content="サムライゲーム、雨の侍のビジュアル作品、デジタル時計ウィジェットを集めた作品サイト。">
-  <title>サムライのアトリエ | ゲーム・作品・ガジェット</title>
+  <meta name="description" content="サムライ・ソリティアで遊び、雨の城下町を描いた侍の作品を眺め、Windows用デジタル時計ウィジェットをダウンロード。ゲーム・アート・ガジェットを集めたサムライのアトリエ。">
+  <title>サムライのアトリエ | 侍ゲーム・アート・時計ウィジェット</title>
+  <link rel="canonical" href="https://samurai-atelier-yochiyan.yochiyan360.chatgpt.site/">
+  <link rel="alternate" hreflang="ja" href="https://samurai-atelier-yochiyan.yochiyan360.chatgpt.site/">
+  <link rel="alternate" hreflang="en" href="https://samurai-atelier-yochiyan.yochiyan360.chatgpt.site/en/">
+  <link rel="alternate" hreflang="x-default" href="https://samurai-atelier-yochiyan.yochiyan360.chatgpt.site/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="サムライのアトリエ | Samurai Atelier">
+  <meta property="og:description" content="侍ゲーム、ビジュアル作品、デジタル時計。Play Samurai Solitaire, explore samurai art, and discover a desktop clock widget.">
+  <meta property="og:url" content="https://samurai-atelier-yochiyan.yochiyan360.chatgpt.site/">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2310171c'/%3E%3Cpath d='M12 42h40M22 35l10-22 10 22M18 35h28' fill='none' stroke='%23caa870' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script src="site.js" defer></script>
@@ -17,13 +25,14 @@
     <nav aria-label="メインメニュー">
       <a href="#game">ゲーム</a><a href="#gallery">ギャラリー</a><a href="#gadget">ガジェット</a><a href="#about">この場所について</a>
     </nav>
+    <a class="language-link header-language" href="en/" lang="en" hreflang="en" aria-label="Read this site in English">EN</a>
   </header>
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-image"><img src="assets/samurai-portrait.png" alt="雨の城下町に立つ、笠をかぶった侍" fetchpriority="high"></div>
       <div class="hero-copy">
         <p class="eyebrow">ゲームと、小さな道具と、侍の世界</p>
-        <h1 id="hero-title">つくったものが、<br><em>ここに集まる。</em></h1>
+        <h1 id="hero-title">ここから始まり、<br><em>ここに集まる。</em></h1>
         <p>遊べるゲーム、描いた景色、日常で使うウィジェット。気になった作品から、自由に覗いていってください。</p>
         <div class="hero-actions"><a class="button button-primary" href="https://yochiyan360-sudo.github.io/samurai-solitaire/" target="_blank" rel="noopener noreferrer">サムライ・ソリティアで遊ぶ <span aria-hidden="true">↗</span></a><a class="text-link" href="#gallery">作品を見る <span aria-hidden="true">↓</span></a></div>
         <div class="hero-index"><span>01 / GAME</span><span>02 / ART</span><span>03 / GADGET</span></div>
@@ -50,8 +59,8 @@
     <section class="section gadget-section" id="gadget" aria-labelledby="gadget-title">
       <div class="section-heading"><div><p class="eyebrow">03 — TOOLS</p><h2 id="gadget-title">ガジェットコーナー</h2></div><p>日常の画面に、ちょっと気に入った道具を。</p></div>
       <div class="gadget-card">
-        <div class="clock-stage"><div class="clock-widget"><span class="clock-top">DIGITAL CLOCK / LIVE PREVIEW</span><time id="clock" aria-label="現在時刻">--:--:--</time><span class="clock-bottom" id="clock-date">時刻を読み込み中</span></div><span class="clock-stage-note">この表示はブラウザ上のプレビューです</span></div>
-        <div class="gadget-details"><span class="tag">Windows 用ウィジェット</span><h3>デジタル時計ウィジェット</h3><p>デスクトップやタスクバーに時刻を表示する、単一ファイルの時計。ダウンロードして使えます。</p><a class="button button-outline" href="assets/digital-clock-widget.cmd" download="digital_clock_widget_single_file_v2.cmd">ウィジェットをダウンロード <span aria-hidden="true">↓</span></a><small>Windows 用 .cmd ファイル · ダウンロード後に実行</small></div>
+        <div class="clock-stage"><div class="clock-real" aria-label="デジタル時計ウィジェットの表示プレビュー"><svg id="clock-face" viewBox="0 0 154 40" role="img" aria-label="現在時刻"></svg><div class="clock-controls"><button type="button" class="clock-plus" aria-label="プレビューを拡大">+</button><button type="button" class="clock-minus" aria-label="プレビューを縮小">−</button></div></div><time id="clock" class="sr-only" aria-label="現在時刻">--:--:--</time><span class="clock-stage-note">実物のデザインをブラウザで再現しています · Live preview of the actual widget</span></div>
+        <div class="gadget-details"><span class="tag">Windows 用ウィジェット</span><h3>デジタル時計ウィジェット</h3><p>デスクトップやタスクバーに時刻を表示する、単一ファイルの時計。ダウンロードして使えます。</p><p class="english-note" lang="en">A compact digital clock for your Windows desktop or taskbar, delivered as a single file.</p><a class="button button-outline" href="assets/digital-clock-widget.cmd" download="digital_clock_widget_single_file_v2.cmd">ウィジェットをダウンロード <span aria-hidden="true">↓</span></a><small>Windows 用 .cmd ファイル · ダウンロード後に実行</small></div>
       </div>
     </section>
     <section class="about-section" id="about" aria-labelledby="about-title"><div><p class="eyebrow">ABOUT THIS PLACE</p><h2 id="about-title">次の作品も、ここから。</h2></div><p>サムライの世界を入り口に、ゲームや画像、使って楽しい小さな道具を並べていく場所です。新しい作品ができたら、このアトリエに加えていきます。</p></section>

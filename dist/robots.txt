@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://samurai-atelier-yochiyan.yochiyan360.chatgpt.site/sitemap.xml
