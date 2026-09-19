@@ -18,7 +18,13 @@
   <link rel="stylesheet" href="styles.css">
   <script src="site.js" defer></script>
 </head>
-<body>
+<body class="intro-active">
+  <div class="intro-screen" aria-hidden="true">
+    <img class="intro-screen-image" src="assets/samurai-garden-intro.png" alt="" fetchpriority="high">
+    <div class="intro-screen-shade"></div>
+    <p class="intro-screen-copy intro-screen-copy-ja"><span>ここから始まり、</span><strong>ここに集まる。</strong></p>
+  </div>
+  <noscript><style>body{overflow:auto}.intro-screen{display:none}</style></noscript>
   <a class="skip-link" href="#main">本文へ移動</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="サムライのアトリエ トップ"><span class="brand-mark">侍</span><span>サムライのアトリエ<small>SAMURAI ATELIER</small></span></a>
