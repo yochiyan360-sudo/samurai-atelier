@@ -1,13 +1,3 @@
-const introScreen = document.querySelector(".intro-screen");
-if (introScreen) {
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const finishIntro = () => {
-    document.body.classList.remove("intro-active");
-    introScreen.remove();
-  };
-  window.setTimeout(finishIntro, reducedMotion ? 2300 : 5200);
-}
-
 const clock = document.querySelector("#clock");
 const face = document.querySelector("#clock-face");
 const svgNS = "http://www.w3.org/2000/svg";
