@@ -1,2 +1,7 @@
 preview-server.mjs
 .sites-runtime/
+.openai/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
