@@ -8,8 +8,8 @@ A bilingual personal portfolio featuring samurai-themed games, visual artwork, a
 
 ## Live site
 
-- [サムライのアトリエ](https://samurai-atelier-yochiyan.yochiyan360.chatgpt.site/)
-- [English version](https://samurai-atelier-yochiyan.yochiyan360.chatgpt.site/en/)
+- [サムライのアトリエ](https://yochiyan360-sudo.github.io/samurai-atelier/)
+- [English version](https://yochiyan360-sudo.github.io/samurai-atelier/en/)
 
 ## Featured projects
 
@@ -57,4 +57,3 @@ python -m http.server 8000 --directory dist
 ## Rights
 
 © 2026 yochiyan360. All rights reserved. ソースコード、画像、ゲーム素材の再利用・再配布については、事前に作者へお問い合わせください。
-
